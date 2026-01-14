@@ -12,29 +12,29 @@ HELIX ARTIX7 FPGA BOARD is an easy to use FPGA Development board featuring ARTIX
 ## Note: This FPGA Development board is fully compatible with Vivado, EDK, SDK, Vitis, System Generator and ChipscopePro Tools at ease with on-board USB JTAG Interface.
 
 # Features
-• Xilinx XC7A35T-1FTG256C ARTIX7, 12,800 logic cells in 5000 slices
-• MIPI-CSI 5MP Camera connector on board 
-• OV7670 camera connector on board  
-• 16 user switches 
-• 16 user LEDs 
-• 4 user pushbuttons 
-• 100MHz clock 
-• 4-digit 7-segment display 
-• FOUR GPIO ports (32GPIO), can be used for 12 diff channel xadc  
-• ESP-12E WiFi 
-• Buzzer &  
-• Two RGB LED 
-• HDMI out  
-• 12Bit VGA output 
-• USB-UART  
-• Serial Flash 32Mbit 
-• LM35 temperature sensor connected to XADC pin 
-• LDR connected to XADC pin 
-• Preset connected to XADC pin 
-• 8Bit SPI DAC 
-• SD CARD 
-• Stereo 3.5mm Jack (Audio out) 
-• USB-JTAG port for FPGA programming (support Vivado)  
+	Xilinx XC7A35T-1FTG256C ARTIX7, 12,800 logic cells in 5000 slices
+	MIPI-CSI 5MP Camera connector on board 
+	OV7670 camera connector on board  
+	16 user switches 
+	16 user LEDs 
+	4 user pushbuttons 
+	100MHz clock 
+	4-digit 7-segment display 
+	FOUR GPIO ports (32GPIO), can be used for 12 diff channel xadc  
+	ESP-12E WiFi 
+	Buzzer &  
+	Two RGB LED 
+	HDMI out  
+	12Bit VGA output 
+	USB-UART  
+	Serial Flash 32Mbit 
+	LM35 temperature sensor connected to XADC pin 
+	LDR connected to XADC pin 
+	Preset connected to XADC pin 
+	8Bit SPI DAC 
+	SD CARD 
+	Stereo 3.5mm Jack (Audio out) 
+	USB-JTAG port for FPGA programming (support Vivado)  
 
 # Applications
 
@@ -42,3 +42,8 @@ HELIX ARTIX7 FPGA BOARD is an easy to use FPGA Development board featuring ARTIX
 
 
 # Projects
+
+	# Helix_Artix7_OLED
+	OLED Interface & Timing Control: Demonstrates FPGA-generated OLED initialization commands,control signals, and timing-accurate data transfers, verified directly on real hardware.
+	<video src="https://youtu.be/UrPU2bb-z5s?si=wARApa5N4ver8O8p" width="400" />
+	
