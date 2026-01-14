@@ -1,0 +1,461 @@
+
+*** Running vivado
+    with args -log xadc_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xadc_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1162.328 ; gain = 0.000
+Command: synth_design -top xadc_top -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12072
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1186.180 ; gain = 23.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xadc_top' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/.Xil/Vivado-41144-Nishikant/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/.Xil/Vivado-41144-Nishikant/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'xadc_interface' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:3]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_FRAME_WAIT bound to: 1 - type: integer 
+	Parameter S_CONVERSION bound to: 2 - type: integer 
+	Parameter S_CHANGEADD bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/.Xil/Vivado-41144-Nishikant/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (2#1) [C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/.Xil/Vivado-41144-Nishikant/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'xadc_wiz_0' is unconnected for instance 'inst_adc' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:97]
+WARNING: [Synth 8-7023] instance 'inst_adc' of module 'xadc_wiz_0' has 42 connections declared, but only 41 given [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:97]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:188]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:159]
+INFO: [Synth 8-6157] synthesizing module 'bin2dec' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/bin2dec.v:3]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_DONE bound to: 1 - type: integer 
+	Parameter S_DIVIDE bound to: 2 - type: integer 
+	Parameter S_NEXT_DIGIT bound to: 3 - type: integer 
+	Parameter S_CONVERT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin2dec' (3#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/bin2dec.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:232]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_interface' (4#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/xadc_interface.v:3]
+INFO: [Synth 8-638] synthesizing module 'UART_CONTROL' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/new/UART_CONTROL.vhd:91]
+	Parameter FREQUENCY bound to: 10000000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'uart' declared at 'C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/UART.vhd:13' bound to instance 'INST_UARTTRANSMITTER' of component 'UART' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/new/UART_CONTROL.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/UART.vhd:32]
+	Parameter frequency bound to: 10000000 - type: integer 
+	Parameter baud bound to: 9600 - type: integer 
+	Parameter frequency bound to: 10000000 - type: integer 
+	Parameter baud bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'UART_RECEIVER' declared at 'C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/Receiver.vhd:12' bound to instance 'receiver' of component 'uart_receiver' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/UART.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'UART_RECEIVER' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/Receiver.vhd:27]
+	Parameter FREQUENCY bound to: 10000000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART_RECEIVER' (5#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/Receiver.vhd:27]
+	Parameter frequency bound to: 10000000 - type: integer 
+	Parameter baud bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'UART_TRANSMITTER' declared at 'C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/Transmitter.vhd:14' bound to instance 'transmitter' of component 'uart_transmitter' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/UART.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'UART_TRANSMITTER' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/Transmitter.vhd:30]
+	Parameter FREQUENCY bound to: 10000000 - type: integer 
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART_TRANSMITTER' (6#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/Transmitter.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'uart' (7#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/sp6_star_board_test/UART.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'UART_CONTROL' (8#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/imports/new/UART_CONTROL.vhd:91]
+WARNING: [Synth 8-7071] port 'RESET' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'CLK' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'RXD' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'TXD' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'TEST_LED' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'POT_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'POT_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'POT_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'POT_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'LDR_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'LDR_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'LDR_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'LDR_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'TEMP_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'TEMP_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'TEMP_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'TEMP_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH1_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH1_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH1_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH1_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH2_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH2_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH2_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH2_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH3_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH3_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH3_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH3_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH4_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH4_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH4_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J11_CH4_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH1_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH1_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH1_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH1_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH2_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH2_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH2_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH2_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH3_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH3_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH3_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH3_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH4_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH4_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH4_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J12_CH4_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH1_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH1_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH1_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH1_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH2_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH2_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH2_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH2_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH3_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH3_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH3_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH3_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH4_BYTE1' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH4_BYTE2' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH4_BYTE3' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7071] port 'J13_CH4_BYTE4' of module 'uart_control' is unconnected for instance 'inst_uart_control' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+WARNING: [Synth 8-7023] instance 'inst_uart_control' of module 'uart_control' has 65 connections declared, but only 64 given [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:195]
+INFO: [Synth 8-6157] synthesizing module 'delay_counter' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/one_s_delay.v:2]
+	Parameter MAX_COUNT bound to: 20000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_counter' (9#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/new/one_s_delay.v:2]
+INFO: [Synth 8-638] synthesizing module 'SEVEN_SEGMENT' [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:67]
+WARNING: [Synth 8-614] signal 'data_disp_1' is read in the process but is not in the sensitivity list [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:65]
+WARNING: [Synth 8-614] signal 'data_disp_2' is read in the process but is not in the sensitivity list [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:65]
+WARNING: [Synth 8-614] signal 'data_disp_3' is read in the process but is not in the sensitivity list [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:65]
+WARNING: [Synth 8-614] signal 'data_disp_4' is read in the process but is not in the sensitivity list [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'SEVEN_SEGMENT' (10#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/SEVEN_SIGMENT.vhd:38]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_top' (11#1) [C:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.srcs/sources_1/imports/new/xadc_top.sv:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1276.074 ; gain = 113.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1276.074 ; gain = 113.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1276.074 ; gain = 113.746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1276.074 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/.Xil/Vivado-41144-Nishikant/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'inst_xadc_interface/inst_adc'
+Finished Parsing XDC File [C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/.Xil/Vivado-41144-Nishikant/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'inst_xadc_interface/inst_adc'
+Parsing XDC File [c:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst_clk_wiz_0'
+Finished Parsing XDC File [c:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst_clk_wiz_0'
+Parsing XDC File [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vauxp10'. [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'vauxn10'. [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'vauxp2'. [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'vauxn2'. [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc:138]
+Finished Parsing XDC File [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/anirudda_internship/practice/xadc_helix/xadc_helix.srcs/constrs_1/new/xadc_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xadc_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xadc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1355.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1355.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1355.477 ; gain = 193.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1355.477 ; gain = 193.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {c:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {c:/FPGA_DEMO/Artix 7/XADC_DEMO/EISLER_A7_XADC/EISLER_A7_XADC.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_xadc_interface/inst_adc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1355.477 ; gain = 193.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bin2dec'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'UART_RECEIVER'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'UART_TRANSMITTER'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+                S_DIVIDE |                              001 |                              010
+               S_CONVERT |                              010 |                              100
+            S_NEXT_DIGIT |                              011 |                              011
+                  S_DONE |                              100 |                              001
+                  iSTATE |                              101 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bin2dec'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                       0000000001 |                             0000
+                    bit0 |                       0000000010 |                             0001
+                    bit1 |                       0000000100 |                             0010
+                    bit2 |                       0000001000 |                             0011
+                    bit3 |                       0000010000 |                             0100
+                    bit4 |                       0000100000 |                             0101
+                    bit5 |                       0001000000 |                             0110
+                    bit6 |                       0010000000 |                             0111
+                    bit7 |                       0100000000 |                             1000
+                    stop |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'UART_RECEIVER'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                     000000000001 |                             0000
+                   start |                     000000000010 |                             0001
+                    bit0 |                     000000000100 |                             0010
+                    bit1 |                     000000001000 |                             0011
+                    bit2 |                     000000010000 |                             0100
+                    bit3 |                     000000100000 |                             0101
+                    bit4 |                     000001000000 |                             0110
+                    bit5 |                     000010000000 |                             0111
+                    bit6 |                     000100000000 |                             1000
+                    bit7 |                     001000000000 |                             1001
+                   stop1 |                     010000000000 |                             1010
+                   stop2 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'UART_TRANSMITTER'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.477 ; gain = 193.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	              560 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 17    
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	  18 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 44    
+	   4 Input    1 Bit        Muxes := 24    
+	  16 Input    1 Bit        Muxes := 16    
+	  10 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 8     
+	  25 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP b2d_din1, operation Mode is: A*(B:0x14a).
+DSP Report: operator b2d_din1 is absorbed into DSP b2d_din1.
+DSP Report: Generating DSP m_b2d/data1, operation Mode is: A2*(B:0x3e8).
+DSP Report: register b2d_din_reg is absorbed into DSP m_b2d/data1.
+DSP Report: operator m_b2d/data1 is absorbed into DSP m_b2d/data1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 1355.477 ; gain = 193.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|xadc_interface | A*(B:0x14a)  | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|xadc_interface | A2*(B:0x3e8) | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 1395.027 ; gain = 232.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:31 . Memory (MB): peak = 1409.047 ; gain = 246.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:34 . Memory (MB): peak = 1428.059 ; gain = 265.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:01:47 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:01:47 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:48 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:48 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:48 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:48 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |xadc_wiz |     1|
+|3     |BUFG     |     2|
+|4     |CARRY4   |   201|
+|5     |DSP48E1  |     2|
+|7     |LUT1     |    23|
+|8     |LUT2     |   246|
+|9     |LUT3     |   238|
+|10    |LUT4     |   248|
+|11    |LUT5     |   204|
+|12    |LUT6     |   396|
+|13    |MUXF7    |    48|
+|14    |MUXF8    |    12|
+|15    |FDCE     |   122|
+|16    |FDRE     |   545|
+|17    |FDSE     |    44|
+|18    |IBUF     |    31|
+|19    |OBUF     |    33|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:48 . Memory (MB): peak = 1433.539 ; gain = 271.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:01:42 . Memory (MB): peak = 1433.539 ; gain = 191.809
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:49 . Memory (MB): peak = 1433.539 ; gain = 271.211
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1445.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1446.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:02:14 . Memory (MB): peak = 1446.605 ; gain = 284.277
+INFO: [Common 17-1381] The checkpoint 'C:/anirudda_internship/practice/xadc_helix/xadc_helix.runs/synth_1/xadc_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xadc_top_utilization_synth.rpt -pb xadc_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  8 15:28:56 2026...

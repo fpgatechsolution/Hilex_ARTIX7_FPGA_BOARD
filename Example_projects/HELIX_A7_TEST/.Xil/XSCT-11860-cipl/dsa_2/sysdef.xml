@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="3" DIGEST="">
+	<TOOL_VERSION Version="2017.3"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="numato.com:neso:1.0" PART="xc7a100tcsg324-1" ARCH="artix7" PACKAGE="csg324" DEVICE="7a100t" SPEED="-1" LUT="63400" FF="126800" BRAM="135" DSP="240"/>
+	<HIERARCHY Name="system_wrapper"/>
+	<File Type="HW_HANDOFF" Name="system.hwh" src_db="system.hdf" DESIGN_HIERARCHY="system_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BD_TCL" Name="system_bd.tcl" src_db="system.hdf">
+	</File>
+	<File Type="BIT" Name="system_wrapper.bit" src_db="system.hdf">
+	</File>
+	<File Type="MMI" Name="system_wrapper.mmi" src_db="system.hdf">
+	</File>
+	<USEDRESOURCES LUT="0" FF="18131" BRAM="18" DSP="6"/>
+</Project>
+

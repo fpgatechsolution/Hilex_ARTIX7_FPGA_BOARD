@@ -1,0 +1,3 @@
+clk_wiz_0_clk_wiz.v,verilog,xil_defaultlib,../../../../../../FPGA_DEMO/Artix 7/oled_test/project_oled/project_oled.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,incdir="../../../../../../FPGA_DEMO/Artix7/oled_test/project_oled/project_oled.gen/sources_1/ip/clk_wiz_0"
+clk_wiz_0.v,verilog,xil_defaultlib,../../../../../../FPGA_DEMO/Artix 7/oled_test/project_oled/project_oled.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,incdir="../../../../../../FPGA_DEMO/Artix7/oled_test/project_oled/project_oled.gen/sources_1/ip/clk_wiz_0"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec 15 13:22:57 2025
+# Process ID: 69272
+# Current directory: C:/Users/Dell/Documents/projects/HELIX_A7/HELIX_A7_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent107332 C:\Users\Dell\Documents\projects\HELIX_A7\HELIX_A7_TEST\project_1.xpr
+# Log file: C:/Users/Dell/Documents/projects/HELIX_A7/HELIX_A7_TEST/vivado.log
+# Journal file: C:/Users/Dell/Documents/projects/HELIX_A7/HELIX_A7_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dell/Documents/projects/HELIX_A7/HELIX_A7_TEST/project_1.xpr
+update_compile_order -fileset sources_1
+copy_run -name synth_1_copy_2 [get_runs synth_1] 
+set_property part xc7a35tftg256-1 [current_project]
+reset_run synth_1
+reset_run design_1_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1767868425">
+  <File Type="BITSTR-BMM" Name="OLED_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="OLED_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="OLED_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="OLED_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="OLED.tcl"/>
+  <File Type="OPT-TIMING" Name="OLED_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="OLED_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="OLED_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="OLED_reports.tcl"/>
+  <File Type="OPT-DRC" Name="OLED_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="OLED.hwdef"/>
+  <File Type="PWROPT-DCP" Name="OLED_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="OLED_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="OLED_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="OLED_placed.dcp"/>
+  <File Type="PLACE-IO" Name="OLED_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="OLED_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="OLED_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="OLED_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="OLED_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="OLED_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="OLED_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="OLED_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="OLED_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="OLED.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="OLED_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="OLED_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="OLED_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="OLED.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="OLED_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="OLED_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="OLED_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="OLED_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="OLED_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="OLED_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="OLED_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="OLED.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="OLED_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="OLED_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="OLED_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="OLED_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="OLED_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="OLED_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="OLED_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="OLED_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="OLED_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="OLED_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="OLED_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="OLED_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="OLED_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="OLED_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="OLED_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="OLED_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="OLED_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="OLED_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="OLED_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="OLED_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="OLED_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="OLED.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="OLED_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="OLED.rbt"/>
+  <File Type="BITSTR-NKY" Name="OLED.nky"/>
+  <File Type="PDI-FILE" Name="OLED.pdi"/>
+  <File Type="RCFI_FILE" Name="OLED.rcfi"/>
+  <File Type="CFI_FILE" Name="OLED.cfi"/>
+  <File Type="RNPI_FILE" Name="OLED.rnpi"/>
+  <File Type="NPI_FILE" Name="OLED.npi"/>
+  <File Type="RBD_FILE" Name="OLED.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="OLED.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="OLED.sysdef"/>
+  <File Type="BG-BGN" Name="OLED.bgn"/>
+  <File Type="BG-DRC" Name="OLED.drc"/>
+  <File Type="RDI-RDI" Name="OLED.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../FPGA_DEMO/Artix 7/oled_test/project_oled/project_oled.srcs/sources_1/new/bram1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../FPGA_DEMO/Artix 7/oled_test/project_oled/project_oled.srcs/sources_1/new/i2c.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../FPGA_DEMO/Artix 7/oled_test/project_oled/project_oled.srcs/sources_1/new/OLED.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="OLED"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

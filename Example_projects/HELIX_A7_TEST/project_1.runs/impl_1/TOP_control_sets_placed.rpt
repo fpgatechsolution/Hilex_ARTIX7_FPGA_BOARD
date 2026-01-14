@@ -1,0 +1,103 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Dec 18 14:45:56 2025
+| Host         : Nishikant running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    70 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             148 |           48 |
+| No           | No                    | Yes                    |              95 |           24 |
+| No           | Yes                   | No                     |              47 |           15 |
+| Yes          | No                    | No                     |              34 |           15 |
+| Yes          | No                    | Yes                    |              64 |           16 |
+| Yes          | Yes                   | No                     |              54 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                                  Enable Signal                                  |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+--------------+
+|  DELAY_CLK                  |                                                                                 |                                                                            |                1 |              1 |         1.00 |
+|  Inst_LCD_4BIT/dataout_s    |                                                                                 |                                                                            |                1 |              4 |         4.00 |
+|  INST_delay_counter/CLK_1S  |                                                                                 | KEY_0_IBUF                                                                 |                2 |              5 |         2.50 |
+|  INST_clk_wiz/inst/clk_out3 |                                                                                 | KEY_3_IBUF                                                                 |                2 |              5 |         2.50 |
+|  INST_clk_wiz/inst/clk_out1 |                                                                                 | Inst_dvid/shift_green[7]_i_1_n_0                                           |                1 |              5 |         5.00 |
+|  INST_clk_wiz/inst/clk_out1 |                                                                                 | Inst_dvid/shift_blue[7]_i_1_n_0                                            |                2 |              5 |         2.50 |
+|  INST_clk_wiz/inst/clk_out1 |                                                                                 | Inst_dvid/shift_red[7]_i_1_n_0                                             |                1 |              5 |         5.00 |
+|  INST_clk_wiz/inst/clk_out1 |                                                                                 | Inst_dvid/shift_blue[9]_i_1_n_0                                            |                3 |              6 |         2.00 |
+|  INST_clk_wiz/inst/clk_out3 | Inst_uart_control/INST_UARTTRANSMITTER/transmitter/E[0]                         |                                                                            |                5 |              7 |         1.40 |
+|  INST_clk_wiz/inst/clk_out3 | Inst_uart_control/TXD_START_reg_n_0                                             |                                                                            |                4 |              7 |         1.75 |
+|  INST_clk_wiz/inst/clk_out2 | INST_AUDIO/counter_octave                                                       |                                                                            |                3 |              8 |         2.67 |
+|  INST_clk_wiz/inst/clk_out2 |                                                                                 | Inst_VGA_SYNC/clear                                                        |                4 |             10 |         2.50 |
+|  INST_clk_wiz/inst/clk_out2 | Inst_VGA_SYNC/sel                                                               | Inst_VGA_SYNC/v_count0                                                     |                4 |             10 |         2.50 |
+|  INST_clk_wiz/inst/clk_out3 | Inst_uart_control/INST_UARTTRANSMITTER/transmitter/FSM_onehot_STATE[11]_i_1_n_0 |                                                                            |                3 |             12 |         4.00 |
+|  INST_clk_wiz/inst/clk_out3 | Inst_uart_control/INST_UARTTRANSMITTER/transmitter/TXD_BUSY                     | Inst_uart_control/INST_UARTTRANSMITTER/transmitter/BAUD_DIVIDER[5]_i_1_n_0 |                3 |             12 |         4.00 |
+|  INST_clk_wiz/inst/clk_out2 |                                                                                 | Inst_VGA_SYNC/blank                                                        |                4 |             16 |         4.00 |
+|  INST_clk_wiz/inst/clk_out3 |                                                                                 | KEY_0_IBUF                                                                 |                4 |             16 |         4.00 |
+|  INST_clk_wiz/inst/clk_out1 |                                                                                 |                                                                            |                4 |             19 |         4.75 |
+|  INST_clk_wiz/inst/clk_out5 |                                                                                 | KEY_0_IBUF                                                                 |                5 |             20 |         4.00 |
+|  DELAY_CLK                  | Inst_uart_control/T3[0]__0_i_1_n_0                                              | KEY_3_IBUF                                                                 |                8 |             32 |         4.00 |
+|  INST_clk_wiz/inst/clk_out3 |                                                                                 |                                                                            |               12 |             32 |         2.67 |
+|  INST_clk_wiz/inst/clk_out3 | Inst_uart_control/INST_UARTTRANSMITTER/transmitter/STATE_reg[2]                 | Inst_uart_control/STATE_PROC.T3[31]_i_1_n_0                                |                8 |             32 |         4.00 |
+|  INST_clk_wiz/inst/clk_out3 | Inst_uart_control/MSG_CNT[0]_i_1_n_0                                            | KEY_3_IBUF                                                                 |                8 |             32 |         4.00 |
+|  lcd_en_OBUF_BUFG           |                                                                                 | KEY_0_IBUF                                                                 |               11 |             49 |         4.45 |
+|  INST_clk_wiz/inst/clk_out2 |                                                                                 |                                                                            |               30 |             92 |         3.07 |
++-----------------------------+---------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

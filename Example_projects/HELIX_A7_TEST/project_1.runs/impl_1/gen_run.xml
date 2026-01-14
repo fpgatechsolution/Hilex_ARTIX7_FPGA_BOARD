@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1766049247">
+  <File Type="ROUTE-PWR" Name="TOP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TOP.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="TOP_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TOP_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="TOP.msk"/>
+  <File Type="ROUTE-CLK" Name="TOP_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TOP.vdi"/>
+  <File Type="BG-BIT" Name="TOP.bit"/>
+  <File Type="BG-DRC" Name="TOP.drc"/>
+  <File Type="BG-BGN" Name="TOP.bgn"/>
+  <File Type="BG-BIN" Name="TOP.bin"/>
+  <File Type="BITSTR-RBT" Name="TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="TOP_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TOP_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="TOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="TOP.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="TOP.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="TOP_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TOP.hwdef"/>
+  <File Type="PLACE-IO" Name="TOP_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TOP_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TOP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TOP_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="TOP_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TOP_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TOP_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TOP_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TOP_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="TOP_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="TOP_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="TOP_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TOP_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="TOP_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TOP_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TOP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TOP_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TOP_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="TOP.pdi"/>
+  <File Type="RCFI_FILE" Name="TOP.rcfi"/>
+  <File Type="CFI_FILE" Name="TOP.cfi"/>
+  <File Type="RNPI_FILE" Name="TOP.rnpi"/>
+  <File Type="NPI_FILE" Name="TOP.npi"/>
+  <File Type="RBD_FILE" Name="TOP.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/audio.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/one_s_del.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LED_SHIFTER.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/new/LED_SHIFTER.vhd"/>
+        <Attr Name="ImportTime" Val="1707415312"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sp6_star_board_test/Receiver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/imports/sp6_star_board_test/Receiver.vhd"/>
+        <Attr Name="ImportTime" Val="1707413816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sp6_star_board_test/SEVEN_SIGMENT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/imports/sp6_star_board_test/SEVEN_SIGMENT.vhd"/>
+        <Attr Name="ImportTime" Val="1707413816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/TMDS_encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../15_EISLER_A7/ELSLER_FPGA/CAM_0V7670_HDMI/srcs/sources_1/imports/TMDS_encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1718704655"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sp6_star_board_test/Transmitter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/imports/sp6_star_board_test/Transmitter.vhd"/>
+        <Attr Name="ImportTime" Val="1707413816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sp6_star_board_test/UART.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/imports/sp6_star_board_test/UART.vhd"/>
+        <Attr Name="ImportTime" Val="1707413816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/UART_CONTROL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/new/UART_CONTROL.vhd"/>
+        <Attr Name="ImportTime" Val="1707413817"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/VGA_control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/new/VGA_control.vhd"/>
+        <Attr Name="ImportTime" Val="1707413817"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/dvid.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../15_EISLER_A7/ELSLER_FPGA/CAM_0V7670_HDMI/srcs/sources_1/imports/dvid.vhd"/>
+        <Attr Name="ImportTime" Val="1718704655"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/lcd_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/new/lcd_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1707414276"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sp6_star_board_test/top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/sources_1/imports/sp6_star_board_test/top.vhd"/>
+        <Attr Name="ImportTime" Val="1707414555"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_SP7_test/project_SP7_test/project_SP7_test.srcs/constrs_1/new/top.xdc"/>
+        <Attr Name="ImportTime" Val="1707415160"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/new/top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
+</GenRun>

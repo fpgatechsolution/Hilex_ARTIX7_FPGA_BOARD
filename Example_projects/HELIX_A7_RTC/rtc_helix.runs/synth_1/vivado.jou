@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan  8 12:11:11 2026
+# Process ID: 25756
+# Current directory: C:/anirudda_internship/practice/rtc_helix/rtc_helix.runs/synth_1
+# Command line: vivado.exe -log pmod_real_time_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pmod_real_time_clock.tcl
+# Log file: C:/anirudda_internship/practice/rtc_helix/rtc_helix.runs/synth_1/pmod_real_time_clock.vds
+# Journal file: C:/anirudda_internship/practice/rtc_helix/rtc_helix.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pmod_real_time_clock.tcl -notrace
