@@ -43,8 +43,39 @@ HELIX ARTIX7 FPGA BOARD is an easy to use FPGA Development board featuring ARTIX
 
 # Projects
 
-# Helix_Artix7_OLED
+## Helix_Artix7_TEST
+Complete Vivado FPGA Bring-Up Flow: Step-by-step demonstration of project creation, Artix-7 device selection,XDC pin mapping, 
+clock/reset setup, synthesis, implementation, bitstream generation, and JTAG programming on the HELIX Artix-7 board.
+
+[![Watch the video](https://img.youtube.com/vi/MsnSiYJDizNZ49Ch/0.jpg)](www.youtube.com)
+
+##Helix_Artix7_XADC
+XADC Functional Demonstration: Shows a complete Vivado-based flow using Verilog logic to interface with the Artix-7 XADC for 
+reading external analog voltages and internal parameters like temperature and supply voltage on the HELIX Artix-7 board.
+
+[![Watch the video](https://img.youtube.com/vi/LpEaJpYjD_usTU7K/0.jpg)](www.youtube.com)
+
+
+## Helix_Artix7_OLED
 OLED Interface & Timing Control: Demonstrates FPGA-generated OLED initialization commands,control signals, 
 and timing-accurate data transfers, verified directly on real hardware.
 
-![[Watch the video](https://github.com/fpgatechsolution/Hilex_ARTIX7_FPGA_BOARD/blob/main/img/oled.jpeg)](https://www.youtube.com/watch?v=UrPU2bb-z5s)
+[![Watch the video](https://img.youtube.com/vi/UrPU2bb-z5s/0.jpg)](www.youtube.com)
+
+
+## Helix_Artix7_RTC
+RTC Interfacing & Vivado Flow: Demonstrates complete Vivado-based FPGA design flow for RTC testing, including project setup, Artix-7 device selection,
+clock configuration, and XDC pin assignments on the HELIX Artix-7 board.
+
+[![Watch the video](https://img.youtube.com/vi/NJK1LThpaTcnlgFr/0.jpg)](www.youtube.com)
+
+
+##Helix_Artix7_VGA
+VGA Signal Generation on FPGA: Demonstrates VGA output implementation on the HELIX Artix-7 board using Vivado, including correct resolution timing, 
+synchronization, and color generation verified on an external monitor.
+
+[![Watch the video](https://img.youtube.com/vi/nJcGXiZJginAbkc/0.jpg)](www.youtube.com)
+
+
+##Helix_Artix7_ANDgate
+Basic Logic Implementation: Demonstrates a simple AND gate designed in Verilog and implemented on the HELIX Artix-7 FPGA using Xilinx Vivado.
