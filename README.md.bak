@@ -47,4 +47,4 @@ HELIX ARTIX7 FPGA BOARD is an easy to use FPGA Development board featuring ARTIX
 OLED Interface & Timing Control: Demonstrates FPGA-generated OLED initialization commands,control signals, 
 and timing-accurate data transfers, verified directly on real hardware.
 
-![[Watch the video](https://github.com/fpgatechsolution/Hilex_ARTIX7_FPGA_BOARD/blob/main/img/app.jpg)](https://www.youtube.com/watch?v=UrPU2bb-z5s)
+![[Watch the video](https://github.com/fpgatechsolution/Hilex_ARTIX7_FPGA_BOARD/blob/main/img/oled.jpg)](https://www.youtube.com/watch?v=UrPU2bb-z5s)
