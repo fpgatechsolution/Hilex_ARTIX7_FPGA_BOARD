@@ -1,7 +1,6 @@
 
-![alt text](https://github.com/fpgatechsolution/Hilex_ARTIX7_FPGA_BOARD/blob/main/img/logo.png)
-![alt text](https://github.com/fpgatechsolution/Hilex_ARTIX7_FPGA_BOARD/blob/main/img/IMG_1.jpg)
 
+![alt text](https://github.com/fpgatechsolution/Hilex_ARTIX7_FPGA_BOARD/blob/main/img/IMG_1.jpg)
 
 
 
