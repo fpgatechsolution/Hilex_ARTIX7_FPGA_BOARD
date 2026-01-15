@@ -76,3 +76,6 @@ synchronization, and color generation verified on an external monitor.
 
 [![Watch the video](https://img.youtube.com/vi/nJcGXiZJginAbkc/0.jpg)](www.youtube.com)
 
+
+##Helix_Artix7_ANDgate
+Basic Logic Implementation: Demonstrates a simple AND gate designed in Verilog and implemented on the HELIX Artix-7 FPGA using Xilinx Vivado.
